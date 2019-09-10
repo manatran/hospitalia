@@ -1,0 +1,239 @@
+:root {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: var(--text);
+  font-size: 16px;
+  --text: #606060;
+  --blue: #003C92;
+  --blue-light: #2771DB;
+  --red: #7F182D;
+  --red-light: #BF2443;
+  --red-lighter: #FFEEFD;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--blue);
+  font-weight: 500;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+h2::after {
+  margin-top: 8px;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 128px;
+  background-color: var(--blue);
+}
+
+a {
+  color: var(--blue-light);
+  text-decoration: none;
+}
+
+a.button {
+  color: white;
+  background-color: var(--blue-light);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 16px auto;
+  max-width: 420px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+a.button img {
+  height: 24px;
+  width: 24px;
+  margin: 0;
+  margin-right: 8px;
+  box-shadow: none;
+}
+a.button:active {
+  opacity: .7;
+}
+
+em {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 720px;
+  padding: 16px 32px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+header {
+  box-sizing: border-box;
+  padding: 80px 0;
+  padding-bottom: 128px;
+  text-align: center;
+  color: var(--red-lighter);
+  background-image: url("../assets/banner.png");
+  background-size: cover;
+  background-position: center;
+}
+header h1 {
+  font-family: "Roboto Bold", "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: white;
+  margin: 0;
+}
+header h1::after {
+  display: block;
+  content: "";
+  margin: 24px auto;
+  height: 2px;
+  width: 128px;
+  background-color: var(--red-lighter);
+  opacity: .7;
+}
+header p {
+  opacity: .7;
+  font-style: italic;
+}
+
+.card {
+  background-color: white;
+  border-radius: 4px;
+  padding: 32px;
+  box-sizing: border-box;
+  margin-top: -80px;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.24);
+}
+.card .meta {
+  border-left: solid 4px var(--red-light);
+  padding-left: 16px;
+}
+.card .meta p {
+  margin: 0;
+  font-size: 20px;
+  color: var(--text);
+  font-weight: 100;
+  font-family: "Oswald Light", "Oswald", Arial, Helvetica, sans-serif;
+}
+.card h2 {
+  margin: 0;
+  margin-bottom: 32px;
+  color: var(--blue);
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Roboto Bold", "Roboto", Arial, Helvetica, sans-serif;
+}
+.card h2::after {
+  display: none;
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.timer section {
+  flex-grow: 2;
+  text-align: center;
+}
+.timer .value {
+  font-size: 40px;
+  color: var(--blue);
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+.timer .unit {
+  text-transform: uppercase;
+  color: var(--text);
+  margin-top: 8px;
+  font-weight: 300;
+  font-family: "Roboto Light", "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.intro p {
+  line-height: 32px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  justify-content: space-between;
+}
+.socials p {
+  line-height: initial;  
+}
+.socials div {
+  margin-top: 32px;
+  width: 33.32%;
+  display: flex;
+  flex-direction: row;
+}
+.socials div div {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.socials h3, .socials p {
+  margin: 0;
+  margin-bottom: 2px;
+  flex-direction: row;
+}
+.socials a {
+  margin-top: 6px;
+}
+.socials img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.kalender img {
+  display: block;
+  max-width: 100%;
+  width: 420px;
+  margin: 0 auto;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.24);
+}
+
+.social a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+
+@media only screen and (max-width: 720px) {
+  header h1 {
+    font-size: 48px;
+  }
+
+  .card {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 24px;
+  }
+  .card .meta p {
+    font-size: 16px;
+  }
+  .card .meta h2 {
+    font-size: 24px;
+  }
+
+  .socials, .social {
+    flex-direction: column;
+  }
+  .socials div {
+    width: 100%;
+  }
+}
