@@ -3,11 +3,11 @@
   color: var(--text);
   font-size: 16px;
   --text: #606060;
-  --blue: #003C92;
-  --blue-light: #2771DB;
-  --red: #7F182D;
-  --red-light: #BF2443;
-  --red-lighter: #FFEEFD;
+  --blue: #003c92;
+  --blue-light: #2771db;
+  --red: #7f182d;
+  --red-light: #bf2443;
+  --red-lighter: #ffeefd;
 }
 
 h1,
@@ -58,7 +58,7 @@ a.button img {
   box-shadow: none;
 }
 a.button:active {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 em {
@@ -68,7 +68,7 @@ em {
 
 .container {
   max-width: 720px;
-  padding: 16px 32px;
+  padding: 32px;
   box-sizing: content-box;
   margin: 0 auto;
 }
@@ -97,10 +97,10 @@ header h1::after {
   height: 2px;
   width: 128px;
   background-color: var(--red-lighter);
-  opacity: .7;
+  opacity: 0.7;
 }
 header p {
-  opacity: .7;
+  opacity: 0.7;
   font-style: italic;
 }
 
@@ -162,13 +162,14 @@ header p {
 }
 
 .socials {
+  padding-top: 16px;
   display: flex;
   flex-direction: row;
   font-size: 14px;
   justify-content: space-between;
 }
 .socials p {
-  line-height: initial;  
+  line-height: initial;
 }
 .socials div {
   margin-top: 32px;
@@ -182,7 +183,8 @@ header p {
   display: flex;
   flex-direction: column;
 }
-.socials h3, .socials p {
+.socials h3,
+.socials p {
   margin: 0;
   margin-bottom: 2px;
   flex-direction: row;
@@ -212,7 +214,6 @@ header p {
   padding-bottom: 16px;
 }
 
-
 @media only screen and (max-width: 720px) {
   header h1 {
     font-size: 48px;
@@ -230,7 +231,8 @@ header p {
     font-size: 24px;
   }
 
-  .socials, .social {
+  .socials,
+  .social {
     flex-direction: column;
   }
   .socials div {
