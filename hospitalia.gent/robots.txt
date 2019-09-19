@@ -1,2 +1,4 @@
+Sitemap: http://hospitalia.gent/sitemap.xml
+
 User-agent: *
 Disallow:
