@@ -3,6 +3,7 @@
   color: var(--text);
   font-size: 16px;
   --text: #606060;
+  --text-lighter: #909090;
   --blue: #003c92;
   --blue-light: #2771db;
   --red: #7f182d;
@@ -212,6 +213,29 @@ header p {
   flex-direction: row;
   align-items: center;
   padding-bottom: 16px;
+}
+
+footer {
+  background-color: #f9f9f9;
+  color: var(--text-lighter);
+}
+footer .container {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding: 16px 32px;
+}
+footer img {
+  height: 40px;
+  filter: brightness(0.66);
+}
+footer p {
+  opacity: 0.75;
+  color: var(--text-lighter);
+  margin: 0;
 }
 
 @media only screen and (max-width: 720px) {
