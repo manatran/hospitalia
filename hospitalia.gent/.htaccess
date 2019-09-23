@@ -1,2 +1,7 @@
 # 404
 ErrorDocument 404 /404.html
+
+# Ensure Canonical URL without www.
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.hospitalia\.gent$
+RewriteRule ^/?$ "http\:\/\/hospitalia\.gent\/" [R=301,L]

@@ -10,7 +10,6 @@
   --red-light: #bf2443;
   --red-lighter: #ffeefd;
 }
-
 h1,
 h2,
 h3,
@@ -21,7 +20,6 @@ h6 {
   font-weight: 500;
   font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
-
 h2::after {
   margin-top: 8px;
   display: block;
@@ -30,12 +28,10 @@ h2::after {
   width: 128px;
   background-color: var(--blue);
 }
-
 a {
   color: var(--blue-light);
   text-decoration: none;
 }
-
 a.button {
   color: white;
   background-color: var(--blue-light);
@@ -61,19 +57,16 @@ a.button img {
 a.button:active {
   opacity: 0.7;
 }
-
 em {
   font-style: normal;
   font-weight: 700;
 }
-
 .container {
   max-width: 720px;
   padding: 32px;
   box-sizing: content-box;
   margin: 0 auto;
 }
-
 header {
   box-sizing: border-box;
   padding: 80px 0;
@@ -104,7 +97,6 @@ header p {
   opacity: 0.7;
   font-style: italic;
 }
-
 .card {
   background-color: white;
   border-radius: 4px;
@@ -135,7 +127,6 @@ header p {
 .card h2::after {
   display: none;
 }
-
 .timer {
   display: flex;
   flex-direction: row;
@@ -157,11 +148,9 @@ header p {
   font-weight: 300;
   font-family: "Roboto Light", "Roboto", Arial, Helvetica, sans-serif;
 }
-
 .intro p {
   line-height: 32px;
 }
-
 .socials {
   padding-top: 16px;
   display: flex;
@@ -199,7 +188,6 @@ header p {
   border-radius: 50%;
   margin-right: 16px;
 }
-
 .kalender img {
   display: block;
   max-width: 100%;
@@ -207,14 +195,12 @@ header p {
   margin: 0 auto;
   box-shadow: 0 3px 16px rgba(0, 0, 0, 0.24);
 }
-
 .social a {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-bottom: 16px;
 }
-
 footer {
   background-color: #f9f9f9;
   color: var(--text-lighter);
@@ -237,12 +223,10 @@ footer p {
   color: var(--text-lighter);
   margin: 0;
 }
-
 @media only screen and (max-width: 720px) {
   header h1 {
     font-size: 48px;
   }
-
   .card {
     margin-left: 16px;
     margin-right: 16px;
@@ -254,7 +238,6 @@ footer p {
   .card .meta h2 {
     font-size: 24px;
   }
-
   .socials,
   .social {
     flex-direction: column;

@@ -1,15 +1,17 @@
-// Counting down to:
+// Counting down until
 const countDownDate = new Date("Nov 5, 2019 18:00:00").getTime();
 
-// Update the count down every second
+// Update every second
 const x = setInterval(() => {
   const now = new Date().getTime();
   const timeLeft = countDownDate - now;
 
-  // Countdown over!
+  // Countdown is over
   if (timeLeft < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "EXPIRED";
+    document.querySelector(".card").style.display = "none";
+    document.querySelector("header").style.paddingBottom = "80px";
+    return;
   }
 
   const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
@@ -19,9 +21,9 @@ const x = setInterval(() => {
   const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-  // Set content of elements
-  document.getElementById("days").innerHTML = ("0" + days).slice(-2);
-  document.getElementById("hrs").innerHTML = ("0" + hours).slice(-2);
-  document.getElementById("mins").innerHTML = ("0" + minutes).slice(-2);
-  document.getElementById("secs").innerHTML = ("0" + seconds).slice(-2);
+  // Set content of timer
+  document.querySelector("#days").innerHTML = ("0" + days).slice(-2);
+  document.querySelector("#hrs").innerHTML = ("0" + hours).slice(-2);
+  document.querySelector("#mins").innerHTML = ("0" + minutes).slice(-2);
+  document.querySelector("#secs").innerHTML = ("0" + seconds).slice(-2);
 }, 1000);
