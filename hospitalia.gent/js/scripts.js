@@ -27,3 +27,14 @@ const x = setInterval(() => {
   document.querySelector("#mins").innerHTML = ("0" + minutes).slice(-2);
   document.querySelector("#secs").innerHTML = ("0" + seconds).slice(-2);
 }, 1000);
+
+// Secure emails
+window.addEventListener("load", () => {
+  const emails = document.querySelectorAll('a[href^="mailto:"]');
+  for (let i = 0; i < emails.length; i++) {
+    emails[i].href = emails[i].href.replace("(at)", "@").replace("(dot)", ".");
+    emails[i].innerHTML = emails[i].innerHTML
+      .replace("(at)", "@")
+      .replace("(dot)", ".");
+  }
+});
