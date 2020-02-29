@@ -119,7 +119,6 @@ header p {
 }
 .card h2 {
   margin: 0;
-  margin-bottom: 32px;
   color: var(--blue);
   font-size: 32px;
   font-weight: 600;
@@ -127,6 +126,27 @@ header p {
 }
 .card h2::after {
   display: none;
+}
+.card h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  color: var(--blue-light);
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 32px;
+}
+.card h3 .superscript {
+  font-size: 14px;
+  margin-right: 8px;
+}
+.card .logo {
+  height: 48px;
+}
+.card .button {
+  margin-bottom: 0;
+  margin-top: 32px;
 }
 .timer {
   display: flex;
@@ -149,7 +169,8 @@ header p {
   font-weight: 300;
   font-family: "Roboto Light", "Roboto", Arial, Helvetica, sans-serif;
 }
-.intro p {
+.intro p,
+.card p {
   line-height: 32px;
 }
 .socials {
