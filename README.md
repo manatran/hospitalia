@@ -1,29 +1,29 @@
 # Signature tutorial
 
-> Vergeet niet je wachtwoord aan te passen!
+> Vergeet niet het wachtwoord van je mailbox aan te passen!
 
-1. Download `signature.html` op je computer
-2. Bewerk de volgende lijntjes code (in Notepad of iets gelijkaardigs):
+1. Download `signature.html` naar je computer
+2. Bewerk de volgende lijntjes code met je eigen informatie (in bv. Notepad of iets gelijkaardigs):
 
   ```html
-    <!-- Op lijn 13: -->
-    Manaus Transez
+    <!-- Op lijn 13: Eigen naam -->
+    NAAM
 
-    <!-- Op lijn 20 -->
-    Web
+    <!-- Op lijn 20: Eigen functie -->
+    FUNCTIE
 
-    <!-- Op lijn 36 (VERGEET OOK DE HREF NIET) -->
-    <a href="mailto:web@hospitalia.gent" style="text-decoration: underline; color: #003c92;">
-      web@hospitalia.gent
+    <!-- Op lijn 36 en 39 (VERGEET ZEKER DE HREF NIET): Eigen email -->
+    <a href="mailto:EMAIL" style="text-decoration: underline; color: #003c92;">
+      EMAIL
     </a>
 
-    <!-- Op lijn 45 (VERGEET OOK DE HREF NIET) -->
-    <a href="tel:+32485631464" style="text-decoration: underline; color: #003c92;">
-      +32 485 63 14 64
+    <!-- Op lijn 48 en 50 (VERGEET ZEKER DE HREF NIET): Eigen telefoonnummer -->
+    <a href="tel:TELEFOONNUMMER" style="text-decoration: underline; color: #003c92;">
+      TELEFOONNUMMER
     </a>
   ```
 
-3. Open vervolgens het bestand (standaard zal dit waarschijnlijk in Google Chrome zijn)
+3. Open vervolgens het bestand (standaard zal dit waarschijnlijk in Google Chrome / Safari zijn)
 4. Kopieer de webpagina (ctrl + a en ctrl + c)
 5. Voeg de signature toe aan je emails (zie links hieronder)
 
